@@ -1,117 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Josef Arvic Galido</title>
-<meta name="description" content="I'm Josef Arvic Galido, a website developer who builds fast, strategic websites designed to make you money.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josef Galido - Website Developer</title>
+    
+    <!-- CORRECT CSS PATH -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="brand"><span class="blip"></span>Josef Arvic Galido</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="about.html" class="is-active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-cta">
-      <a href="audit.html" class="btn btn-secondary">Free Audit</a>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <section class="page-hero">
-    <div class="container">
-      <span class="tag -pass"><span class="dot"></span>About</span>
-      <h1>I build websites that make business owners money</h1>
-    </div>
-  </section>
-
-  <section style="padding-top:24px;">
-    <div class="container">
-      <div class="grid-2" style="align-items:start;">
-        <div>
-          <p style="font-size:1.08rem; color:var(--ink);">I'm Josef Arvic Galido. I'm a website developer who actually cares about results, not just pretty designs.</p>
-          <p>Too many agencies charge thousands for slow, bloated websites that don't generate a single lead. I do the opposite.</p>
-          <p>I build clean, fast, strategic websites designed to convert visitors into paying clients. No fluff. No nonsense. Just measurable results.</p>
-
-          <h3 style="margin-top:36px;">My process is simple</h3>
-          <div class="process-steps">
-            <div class="process-step"><span class="num"></span><p style="margin:0; color:var(--ink);">We talk about your goals.</p></div>
-            <div class="process-step"><span class="num"></span><p style="margin:0; color:var(--ink);">I build your website.</p></div>
-            <div class="process-step"><span class="num"></span><p style="margin:0; color:var(--ink);">You start getting leads.</p></div>
-          </div>
-          <p style="margin-top:18px; font-weight:600; color:var(--ink);">That's it.</p>
-
-          <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Let's Talk</a>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Josef Arvic Galido</h2>
+                <p>Website Developer</p>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="audit.html">Free Audit</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div>
-          <h3 style="margin-bottom:16px;">Here's what I believe</h3>
-          <div class="belief-list">
-            <div class="belief-item"><span class="mark">✓</span><p>Your website should pay for itself within months.</p></div>
-            <div class="belief-item"><span class="mark">✓</span><p>Speed and performance matter more than fancy animations.</p></div>
-            <div class="belief-item"><span class="mark">✓</span><p>Mobile users are your biggest opportunity.</p></div>
-            <div class="belief-item"><span class="mark">✓</span><p>Clear design beats creative chaos every time.</p></div>
-            <div class="belief-item"><span class="mark">✓</span><p>You deserve a site you can actually manage yourself.</p></div>
-          </div>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Your website should make you money.<br>Not cost you customers.</h1>
+            <p>I build fast, professional websites that actually convert visitors into paying clients. No fluff. No delays. Just results.</p>
+            <div class="hero-buttons">
+                <a href="audit.html" class="btn btn-primary">Get Your Free Website Audit</a>
+                <a href="services.html" class="btn btn-secondary">View Pricing</a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="final-cta mt-lg">
-        <h2>Ready to work together?</h2>
-        <p>Tell me about your business and let's map out a website that actually pays for itself.</p>
-        <a href="contact.html" class="btn btn-primary">Let's Talk</a>
-      </div>
-    </div>
-  </section>
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar">
+        <p>Trusted by small businesses, startups, and entrepreneurs who needed a website that actually works.</p>
+    </section>
 
-</main>
+    <!-- ===== DIAGNOSIS SECTION ===== -->
+    <section class="diagnosis">
+        <div class="diagnosis-container">
+            <h2>Is Your Website Driving Customers Away?</h2>
+            <p>Most websites look decent but perform terribly. Here's what I see every day:</p>
+            <div class="diagnosis-grid">
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Takes 5+ seconds to load (visitors leave)</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Doesn't work properly on mobile phones</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>No clear call-to-action (visitors don't know what to do)</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Poor SEO (Google can't find you)</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Outdated design (looks unprofessional)</p>
+                </div>
+            </div>
+            <p class="diagnosis-bottom"><strong>Bottom Line:</strong> Your website is losing you money every single day.</p>
+        </div>
+    </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand"><span class="blip"></span>Josef Arvic Galido</a>
-        <p>Website developer. I build fast, strategic websites designed to convert visitors into paying clients.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="audit.html">Free Audit</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+639509558362">Phone: 0950 955 8362</a></li>
-          <li><a href="mailto:galidojosefarvic@gmail.com">Email: galidojosefarvic@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Josef Arvic Galido. All rights reserved.</span>
-      <span>STATUS: SITE HEALTHY</span>
-    </div>
-  </div>
-</footer>
+    <!-- ===== SOLUTION SECTION ===== -->
+    <section class="solution">
+        <div class="solution-container">
+            <h2>Here's How I Fix It</h2>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <span class="icon">🔍</span>
+                    <h3>Audit & Strategy</h3>
+                    <p>I analyze your current site, identify what's broken, and create a clear plan to fix it.</p>
+                </div>
+                <div class="solution-item">
+                    <span class="icon">⚡</span>
+                    <h3>Build & Optimize</h3>
+                    <p>I build a custom, fast, mobile-friendly website designed to convert visitors into leads.</p>
+                </div>
+                <div class="solution-item">
+                    <span class="icon">🚀</span>
+                    <h3>Launch & Grow</h3>
+                    <p>I launch your site, monitor performance, and make tweaks to maximize results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="js/script.js"></script>
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="pricing">
+        <div class="pricing-container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <h3>STARTER</h3>
+                    <p class="price">$2,500</p>
+                    <ul>
+                        <li>5 Pages</li>
+                        <li>Mobile-Friendly Design</li>
+                        <li>Basic SEO Setup</li>
+                        <li>Contact Forms</li>
+                        <li>1 Month Support</li>
+                        <li>Fast Loading Speed</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <h3>GROWTH</h3>
+                    <p class="price">$5,000</p>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>Up to 10 Pages</li>
+                        <li>Advanced SEO Optimization</li>
+                        <li>Blog Integration</li>
+                        <li>Custom Design</li>
+                        <li>3 Months Support</li>
+                        <li>Performance Tracking</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <h3>PREMIUM</h3>
+                    <p class="price">$8,500+</p>
+                    <ul>
+                        <li>Everything in Growth</li>
+                        <li>Unlimited Pages</li>
+                        <li>E-Commerce / Booking System</li>
+                        <li>CRM Integration</li>
+                        <li>Email Automation Setup</li>
+                        <li>6 Months Support</li>
+                        <li>Monthly Performance Reports</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Josef Arvic Galido</h3>
+                <p>Website Developer</p>
+            </div>
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="audit.html">Free Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p><strong>Phone:</strong> 09509558362</p>
+                <p><strong>Email:</strong> galidojosefarvic@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Josef Arvic Galido. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CORRECT SCRIPT PATH -->
+    <script src="script.js"></script>
+
 </body>
 </html>
