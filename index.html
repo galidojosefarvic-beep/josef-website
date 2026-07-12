@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -87,6 +88,20 @@
             color: #fff;
         }
 
+        /* ===== SECTIONS ===== */
+        .section {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #0a0a1a;
+        }
+
         /* ===== HERO ===== */
         .hero {
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%);
@@ -115,9 +130,6 @@
             font-size: 20px;
             color: #ccc;
             margin-bottom: 40px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .hero-buttons {
@@ -156,7 +168,6 @@
         .btn-secondary:hover {
             background: #fff;
             color: #0a0a1a;
-            transform: translateY(-2px);
         }
 
         /* ===== TRUST BAR ===== */
@@ -173,194 +184,68 @@
             font-weight: 500;
         }
 
-        /* ===== DIAGNOSIS ===== */
-        .diagnosis {
-            padding: 80px 40px;
-            background: #fff;
-        }
-
-        .diagnosis-container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .diagnosis h2 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #0a0a1a;
-        }
-
-        .diagnosis-container > p {
-            text-align: center;
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 40px;
-        }
-
-        .diagnosis-grid {
+        /* ===== GRIDS ===== */
+        .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            gap: 30px;
         }
 
-        .diagnosis-item {
-            background: #f8f9fa;
-            padding: 25px 20px;
-            border-radius: 10px;
-            border-left: 4px solid #ff6b35;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .diagnosis-item .icon {
-            font-size: 28px;
-        }
-
-        .diagnosis-item p {
-            font-size: 16px;
-            color: #333;
-        }
-
-        .diagnosis-bottom {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 20px;
-            color: #0a0a1a;
-        }
-
-        /* ===== SOLUTION ===== */
-        .solution {
-            padding: 80px 40px;
-            background: #f8f9fa;
-        }
-
-        .solution-container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .solution h2 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 50px;
-            color: #0a0a1a;
-        }
-
-        .solution-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-        }
-
-        .solution-item {
+        .card {
             background: #fff;
-            padding: 40px 30px;
+            padding: 30px;
             border-radius: 10px;
-            text-align: center;
             box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            text-align: center;
+            border: 1px solid #eee;
         }
 
-        .solution-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .solution-item .icon {
-            font-size: 48px;
+        .card .icon {
+            font-size: 40px;
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        .solution-item h3 {
+        .card h3 {
             font-size: 22px;
             margin-bottom: 15px;
             color: #0a0a1a;
         }
 
-        .solution-item p {
+        .card p {
             color: #666;
-            font-size: 16px;
         }
 
-        /* ===== PRICING ===== */
-        .pricing {
-            padding: 80px 40px;
-            background: #fff;
-        }
-
-        .pricing-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .pricing h2 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 50px;
-            color: #0a0a1a;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .pricing-item {
-            background: #f8f9fa;
-            padding: 40px 30px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s;
-            border: 1px solid #eee;
-        }
-
-        .pricing-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .pricing-item:nth-child(2) {
-            border: 2px solid #ff6b35;
-        }
-
-        .pricing-item h3 {
-            font-size: 18px;
-            color: #ff6b35;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .pricing-item .price {
-            font-size: 42px;
-            font-weight: 700;
-            color: #0a0a1a;
-            margin-bottom: 20px;
-        }
-
-        .pricing-item ul {
+        .card ul {
             list-style: none;
             text-align: left;
-            margin-bottom: 30px;
+            margin-top: 20px;
         }
 
-        .pricing-item ul li {
+        .card ul li {
             padding: 8px 0;
-            color: #555;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #f0f0f0;
         }
 
-        .pricing-item ul li::before {
+        .card ul li::before {
             content: "✅ ";
             color: #ff6b35;
         }
 
-        .pricing-item .btn {
-            width: 100%;
-            text-align: center;
+        .price {
+            font-size: 42px;
+            font-weight: 700;
+            color: #0a0a1a;
+            margin: 20px 0;
+        }
+
+        .badge {
+            background: #ff6b35;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
         }
 
         /* ===== FOOTER ===== */
@@ -368,6 +253,7 @@
             background: #0a0a1a;
             color: #fff;
             padding: 60px 40px 20px;
+            margin-top: 40px;
         }
 
         .footer-container {
@@ -378,36 +264,25 @@
             gap: 40px;
         }
 
-        .footer-left h3 {
-            font-size: 22px;
-            color: #fff;
-            margin-bottom: 5px;
-        }
-
-        .footer-left p {
-            color: #ff6b35;
-        }
-
-        .footer-center h4,
-        .footer-right h4 {
+        .footer-container h4 {
             color: #fff;
             margin-bottom: 15px;
         }
 
-        .footer-center ul {
+        .footer-container ul {
             list-style: none;
         }
 
-        .footer-center ul li {
+        .footer-container ul li {
             margin-bottom: 10px;
         }
 
-        .footer-center ul li a {
+        .footer-container ul li a {
             color: #aaa;
             transition: color 0.3s;
         }
 
-        .footer-center ul li a:hover {
+        .footer-container ul li a:hover {
             color: #ff6b35;
         }
 
@@ -430,53 +305,31 @@
             font-size: 14px;
         }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
                 gap: 15px;
             }
-
             nav ul {
                 justify-content: center;
                 gap: 15px;
             }
-
             .hero h1 {
                 font-size: 32px;
             }
-
             .hero p {
                 font-size: 17px;
             }
-
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-
             .btn {
                 width: 100%;
                 text-align: center;
             }
-
-            .diagnosis h2,
-            .solution h2,
-            .pricing h2 {
-                font-size: 28px;
-            }
-
-            .pricing-item .price {
-                font-size: 32px;
-            }
-
-            .footer-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
         }
     </style>
-
 </head>
 <body>
 
@@ -488,134 +341,124 @@
                 <p>Website Developer</p>
             </div>
             <ul>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/index.html">Home</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/services.html">Services</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/portfolio.html">Portfolio</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/about.html">About</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/contact.html">Contact</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/audit.html">Free Audit</a></li>
-</ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#audit">Free Audit</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero">
+    <!-- ===== HOME ===== -->
+    <section id="home" class="hero">
         <div class="hero-container">
             <h1>Your website should make you money.<br><span>Not cost you customers.</span></h1>
             <p>I build fast, professional websites that actually convert visitors into paying clients. No fluff. No delays. Just results.</p>
             <div class="hero-buttons">
-                <a href="audit.html" class="btn btn-primary">Get Your Free Website Audit</a>
-                <a href="services.html" class="btn btn-secondary">View Pricing</a>
+                <a href="#audit" class="btn btn-primary">Get Your Free Website Audit</a>
+                <a href="#services" class="btn btn-secondary">View Pricing</a>
             </div>
         </div>
     </section>
 
-    <!-- ===== TRUST BAR ===== -->
     <section class="trust-bar">
         <p>Trusted by small businesses, startups, and entrepreneurs who needed a website that actually works.</p>
     </section>
 
-    <!-- ===== DIAGNOSIS ===== -->
-    <section class="diagnosis">
-        <div class="diagnosis-container">
-            <h2>Is Your Website Driving Customers Away?</h2>
-            <p>Most websites look decent but perform terribly. Here's what I see every day:</p>
-            <div class="diagnosis-grid">
-                <div class="diagnosis-item">
-                    <span class="icon">⏱️</span>
-                    <p>Takes 5+ seconds to load (visitors leave)</p>
-                </div>
-                <div class="diagnosis-item">
-                    <span class="icon">📱</span>
-                    <p>Doesn't work properly on mobile phones</p>
-                </div>
-                <div class="diagnosis-item">
-                    <span class="icon">🎯</span>
-                    <p>No clear call-to-action (visitors don't know what to do)</p>
-                </div>
-                <div class="diagnosis-item">
-                    <span class="icon">🔍</span>
-                    <p>Poor SEO (Google can't find you)</p>
-                </div>
-                <div class="diagnosis-item">
-                    <span class="icon">🎨</span>
-                    <p>Outdated design (looks unprofessional)</p>
-                </div>
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section">
+        <h2 class="section-title">My Services</h2>
+        <div class="grid-3">
+            <div class="card">
+                <span class="icon">🌐</span>
+                <h3>Business Websites</h3>
+                <p>Professional 5-10 page websites. Perfect for service-based businesses.</p>
+                <p class="price">$2,500</p>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
             </div>
-            <p class="diagnosis-bottom"><strong>Bottom Line:</strong> Your website is losing you money every single day.</p>
-        </div>
-    </section>
-
-    <!-- ===== SOLUTION ===== -->
-    <section class="solution">
-        <div class="solution-container">
-            <h2>Here's How I Fix It</h2>
-            <div class="solution-grid">
-                <div class="solution-item">
-                    <span class="icon">🔍</span>
-                    <h3>Audit & Strategy</h3>
-                    <p>I analyze your current site, identify what's broken, and create a clear plan to fix it.</p>
-                </div>
-                <div class="solution-item">
-                    <span class="icon">⚡</span>
-                    <h3>Build & Optimize</h3>
-                    <p>I build a custom, fast, mobile-friendly website designed to convert visitors into leads.</p>
-                </div>
-                <div class="solution-item">
-                    <span class="icon">🚀</span>
-                    <h3>Launch & Grow</h3>
-                    <p>I launch your site, monitor performance, and make tweaks to maximize results.</p>
-                </div>
+            <div class="card" style="border: 2px solid #ff6b35;">
+                <span class="badge">Popular</span>
+                <span class="icon">🚀</span>
+                <h3>Growth Engine</h3>
+                <p>Custom design, full SEO, blog integration, and 3 months of optimization.</p>
+                <p class="price">$5,000</p>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="card">
+                <span class="icon">👑</span>
+                <h3>Ecosystem</h3>
+                <p>Full funnel build, CRM integration, email automation, and 6 months support.</p>
+                <p class="price">$8,500+</p>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
             </div>
         </div>
     </section>
 
-    <!-- ===== PRICING ===== -->
-    <section class="pricing">
-        <div class="pricing-container">
-            <h2>Simple, Transparent Pricing</h2>
-            <div class="pricing-grid">
-                <div class="pricing-item">
-                    <h3>STARTER</h3>
-                    <p class="price">$2,500</p>
-                    <ul>
-                        <li>5 Pages</li>
-                        <li>Mobile-Friendly Design</li>
-                        <li>Basic SEO Setup</li>
-                        <li>Contact Forms</li>
-                        <li>1 Month Support</li>
-                        <li>Fast Loading Speed</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                </div>
-                <div class="pricing-item">
-                    <h3>GROWTH</h3>
-                    <p class="price">$5,000</p>
-                    <ul>
-                        <li>Everything in Starter</li>
-                        <li>Up to 10 Pages</li>
-                        <li>Advanced SEO Optimization</li>
-                        <li>Blog Integration</li>
-                        <li>Custom Design</li>
-                        <li>3 Months Support</li>
-                        <li>Performance Tracking</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                </div>
-                <div class="pricing-item">
-                    <h3>PREMIUM</h3>
-                    <p class="price">$8,500+</p>
-                    <ul>
-                        <li>Everything in Growth</li>
-                        <li>Unlimited Pages</li>
-                        <li>E-Commerce / Booking System</li>
-                        <li>CRM Integration</li>
-                        <li>Email Automation Setup</li>
-                        <li>6 Months Support</li>
-                        <li>Monthly Performance Reports</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                </div>
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="section" style="background: #f8f9fa; border-radius: 20px;">
+        <h2 class="section-title">Recent Work</h2>
+        <div class="grid-3">
+            <div class="card">
+                <span class="icon">🏗️</span>
+                <h3>Construction Co.</h3>
+                <p>Increased leads by 40% with a fast, mobile-friendly redesign.</p>
+            </div>
+            <div class="card">
+                <span class="icon">⚖️</span>
+                <h3>Law Firm</h3>
+                <p>Boosted consultation bookings by 60% with clear CTAs and trust signals.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🍽️</span>
+                <h3>Restaurant</h3>
+                <p>Built an online ordering system that doubled their takeout revenue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 18px; color: #555;">
+            <p>I'm Josef Arvic Galido. I build websites that actually make business owners money.</p>
+            <br>
+            <p>Too many agencies charge thousands for slow, bloated websites that don't generate a single lead. I do the opposite. I build clean, fast, strategic websites designed to convert visitors into paying clients.</p>
+            <br>
+            <p><strong>No fluff. No nonsense. Just measurable results.</strong></p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section" style="background: #0a0a1a; color: white; border-radius: 20px;">
+        <h2 class="section-title" style="color: white;">Let's Build Something Great</h2>
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="color: #ccc; margin-bottom: 30px;">Fill out the form below and I'll get back to you within 24 hours.</p>
+            
+            <div style="background: #1a1a3e; padding: 30px; border-radius: 10px;">
+                <input type="text" placeholder="Your Name" style="width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                <input type="email" placeholder="Your Email" style="width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                <textarea placeholder="Tell me about your project..." rows="5" style="width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 5px;"></textarea>
+                <a href="#" class="btn btn-primary" style="display: block;">Send Message</a>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <p><strong>📞 09509558362</strong></p>
+                <p><strong>📧 galidojosefarvic@gmail.com</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AUDIT ===== -->
+    <section id="audit" class="section">
+        <h2 class="section-title">Free 15-Point Website Audit</h2>
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 18px; color: #555; margin-bottom: 30px;">I'll analyze your current website and send you a personalized video showing exactly what's broken and how to fix it.</p>
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; border: 2px dashed #ff6b35;">
+                <input type="text" placeholder="Your Website URL" style="width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                <input type="email" placeholder="Your Email" style="width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                <a href="#" class="btn btn-primary" style="display: block;">Claim My Free Audit</a>
             </div>
         </div>
     </section>
@@ -623,20 +466,20 @@
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-container">
-            <div class="footer-left">
-                <h3>Josef Arvic Galido</h3>
-                <p>Website Developer</p>
+            <div>
+                <h3 style="color: #ff6b35;">Josef Arvic Galido</h3>
+                <p style="color: #aaa;">Website Developer</p>
             </div>
-            <div class="footer-center">
+            <div>
                 <h4>Quick Links</h4>
                 <ul>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/index.html">Home</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/services.html">Services</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/portfolio.html">Portfolio</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/about.html">About</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/contact.html">Contact</a></li>
-    <li><a href="https://galidojosefarvic-beep.github.io/josef-website/audit.html">Free Audit</a></li>
-</ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#audit">Free Audit</a></li>
+                </ul>
             </div>
             <div class="footer-right">
                 <h4>Contact</h4>
