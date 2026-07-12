@@ -1,147 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — Josef Arvic Galido</title>
-<meta name="description" content="Websites built to drive results — recent projects and outcomes.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josef Galido - Website Developer</title>
+    
+    <!-- CORRECT CSS PATH -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="brand"><span class="blip"></span>Josef Arvic Galido</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html" class="is-active">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-cta">
-      <a href="audit.html" class="btn btn-secondary">Free Audit</a>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <section class="page-hero">
-    <div class="container">
-      <span class="tag -pass"><span class="dot"></span>Portfolio</span>
-      <h1>Websites I've built</h1>
-      <p class="lede">Every site I build is designed to drive results. Here are some recent projects — replace these placeholders with real screenshots and case studies as they're delivered.</p>
-    </div>
-  </section>
-
-  <section style="padding-top:16px;">
-    <div class="container">
-      <div class="port-grid">
-
-        <div class="port-card">
-          <div class="port-thumb">
-            <div class="browser-dots"><span></span><span></span><span></span></div>
-            <div class="mock-lines"><div class="l" style="width:55%"></div><div class="l" style="width:80%"></div><div class="l" style="width:40%"></div></div>
-          </div>
-          <div class="port-body">
-            <span class="port-tagline">Home Services</span>
-            <h3>Sample Project — Plumbing Co.</h3>
-            <p>Rebuilt an outdated site into a fast, mobile-first lead generator with clear service pages and calls-to-action.</p>
-            <span class="port-result">+40% leads</span>
-          </div>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Josef Arvic Galido</h2>
+                <p>Website Developer</p>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="audit.html">Free Audit</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="port-card">
-          <div class="port-thumb">
-            <div class="browser-dots"><span></span><span></span><span></span></div>
-            <div class="mock-lines"><div class="l" style="width:65%"></div><div class="l" style="width:35%"></div><div class="l" style="width:70%"></div></div>
-          </div>
-          <div class="port-body">
-            <span class="port-tagline">Retail / E-Commerce</span>
-            <h3>Sample Project — Boutique Store</h3>
-            <p>Launched an online store with a streamlined checkout, cutting cart abandonment and lifting average order value.</p>
-            <span class="port-result">2.0s load time</span>
-          </div>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Your website should make you money.<br>Not cost you customers.</h1>
+            <p>I build fast, professional websites that actually convert visitors into paying clients. No fluff. No delays. Just results.</p>
+            <div class="hero-buttons">
+                <a href="audit.html" class="btn btn-primary">Get Your Free Website Audit</a>
+                <a href="services.html" class="btn btn-secondary">View Pricing</a>
+            </div>
         </div>
+    </section>
 
-        <div class="port-card">
-          <div class="port-thumb">
-            <div class="browser-dots"><span></span><span></span><span></span></div>
-            <div class="mock-lines"><div class="l" style="width:45%"></div><div class="l" style="width:75%"></div><div class="l" style="width:55%"></div></div>
-          </div>
-          <div class="port-body">
-            <span class="port-tagline">Professional Services</span>
-            <h3>Sample Project — Consulting Firm</h3>
-            <p>Redesigned a dated brochure site into a conversion-focused experience with a clear booking flow.</p>
-            <span class="port-result">6.5% conversion rate</span>
-          </div>
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar">
+        <p>Trusted by small businesses, startups, and entrepreneurs who needed a website that actually works.</p>
+    </section>
+
+    <!-- ===== DIAGNOSIS SECTION ===== -->
+    <section class="diagnosis">
+        <div class="diagnosis-container">
+            <h2>Is Your Website Driving Customers Away?</h2>
+            <p>Most websites look decent but perform terribly. Here's what I see every day:</p>
+            <div class="diagnosis-grid">
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Takes 5+ seconds to load (visitors leave)</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Doesn't work properly on mobile phones</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>No clear call-to-action (visitors don't know what to do)</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Poor SEO (Google can't find you)</p>
+                </div>
+                <div class="diagnosis-item">
+                    <span class="icon">❌</span>
+                    <p>Outdated design (looks unprofessional)</p>
+                </div>
+            </div>
+            <p class="diagnosis-bottom"><strong>Bottom Line:</strong> Your website is losing you money every single day.</p>
         </div>
+    </section>
 
-        <div class="port-card">
-          <div class="port-thumb">
-            <div class="browser-dots"><span></span><span></span><span></span></div>
-            <div class="mock-lines"><div class="l" style="width:60%"></div><div class="l" style="width:50%"></div><div class="l" style="width:80%"></div></div>
-          </div>
-          <div class="port-body">
-            <span class="port-tagline">Health &amp; Wellness</span>
-            <h3>Sample Project — Local Clinic</h3>
-            <p>Built a mobile-friendly booking site with clear service pages and integrated appointment requests.</p>
-            <span class="port-result">96 mobile score</span>
-          </div>
+    <!-- ===== SOLUTION SECTION ===== -->
+    <section class="solution">
+        <div class="solution-container">
+            <h2>Here's How I Fix It</h2>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <span class="icon">🔍</span>
+                    <h3>Audit & Strategy</h3>
+                    <p>I analyze your current site, identify what's broken, and create a clear plan to fix it.</p>
+                </div>
+                <div class="solution-item">
+                    <span class="icon">⚡</span>
+                    <h3>Build & Optimize</h3>
+                    <p>I build a custom, fast, mobile-friendly website designed to convert visitors into leads.</p>
+                </div>
+                <div class="solution-item">
+                    <span class="icon">🚀</span>
+                    <h3>Launch & Grow</h3>
+                    <p>I launch your site, monitor performance, and make tweaks to maximize results.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="pricing">
+        <div class="pricing-container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <h3>STARTER</h3>
+                    <p class="price">$2,500</p>
+                    <ul>
+                        <li>5 Pages</li>
+                        <li>Mobile-Friendly Design</li>
+                        <li>Basic SEO Setup</li>
+                        <li>Contact Forms</li>
+                        <li>1 Month Support</li>
+                        <li>Fast Loading Speed</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <h3>GROWTH</h3>
+                    <p class="price">$5,000</p>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>Up to 10 Pages</li>
+                        <li>Advanced SEO Optimization</li>
+                        <li>Blog Integration</li>
+                        <li>Custom Design</li>
+                        <li>3 Months Support</li>
+                        <li>Performance Tracking</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <h3>PREMIUM</h3>
+                    <p class="price">$8,500+</p>
+                    <ul>
+                        <li>Everything in Growth</li>
+                        <li>Unlimited Pages</li>
+                        <li>E-Commerce / Booking System</li>
+                        <li>CRM Integration</li>
+                        <li>Email Automation Setup</li>
+                        <li>6 Months Support</li>
+                        <li>Monthly Performance Reports</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <p class="mono center mt-lg" style="color:var(--ink-faint); font-size:0.85rem; max-width:560px;">These four projects are placeholder examples built to show the intended layout — swap in real client names, screenshots, and links to live sites as they become available.</p>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Josef Arvic Galido</h3>
+                <p>Website Developer</p>
+            </div>
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="audit.html">Free Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p><strong>Phone:</strong> 09509558362</p>
+                <p><strong>Email:</strong> galidojosefarvic@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Josef Arvic Galido. All rights reserved.</p>
+        </div>
+    </footer>
 
-      <div class="final-cta mt-lg">
-        <h2>Want results like these?</h2>
-        <p>Let's talk about what a fast, conversion-focused website could do for your business.</p>
-        <a href="contact.html" class="btn btn-primary">Book Your Free Consultation</a>
-      </div>
-    </div>
-  </section>
+    <!-- CORRECT SCRIPT PATH -->
+    <script src="script.js"></script>
 
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand"><span class="blip"></span>Josef Arvic Galido</a>
-        <p>Website developer. I build fast, strategic websites designed to convert visitors into paying clients.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="audit.html">Free Audit</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+639509558362">Phone: 0950 955 8362</a></li>
-          <li><a href="mailto:galidojosefarvic@gmail.com">Email: galidojosefarvic@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Josef Arvic Galido. All rights reserved.</span>
-      <span>STATUS: SITE HEALTHY</span>
-    </div>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
 </body>
 </html>
